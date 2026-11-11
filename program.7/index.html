@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: #1f2937;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      margin: 2rem auto;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200" alt="Project preview">
+    <div class="card-overlay">
+      <h3>Project One</h3>
+      <p>A short description</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/201" alt="Project preview">
+    <div class="card-overlay">
+      <h3>Project Two</h3>
+      <p>A short description</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/202" alt="Project preview">
+    <div class="card-overlay">
+      <h3>Project Three</h3>
+      <p>A short description</p>
+    </div>
+  </div>
+</body>
+</html>
