@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-auto-rows: 200px;
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: #f3f4f6;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .project.wide {
+      grid-column: span 2;
+    }
+
+    .project.tall {
+      grid-row: span 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Projects</h1>
+
+  <section class="projects">
+    <div class="project wide">
+      <h3>Project One</h3>
+      <p>The main project, wider than the others.</p>
+    </div>
+    <div class="project">
+      <h3>Project Two</h3>
+      <p>A short description</p>
+    </div>
+    <div class="project tall">
+      <h3>Project Three</h3>
+      <p>A taller card.</p>
+    </div>
+    <div class="project">
+      <h3>Project Four</h3>
+      <p>A short description</p>
+    </div>
+    <div class="project">
+      <h3>Project Five</h3>
+      <p>A short description</p>
+    </div>
+    <div class="project">
+      <h3>Project Six</h3>
+      <p>A short description</p>
+    </div>
+  </section>
+</body>
+</html>
