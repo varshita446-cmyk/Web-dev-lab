@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Tokens</title>
+  <style>
+    :root {
+      --color-primary: #2563eb;
+      --color-text: #1f2937;
+      --color-bg: #ffffff;
+
+      --font-main: "Segoe UI", Arial, sans-serif;
+
+      --text-base: 1rem;
+      --text-lg: 1.5rem;
+      --text-xl: 2.5rem;
+
+      --space: 1rem;
+    }
+
+    body {
+      font-family: var(--font-main);
+      font-size: var(--text-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg);
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space);
+    }
+
+    h2 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space);
+    }
+
+    p {
+      margin-bottom: var(--space);
+    }
+
+    a {
+      color: var(--color-primary);
+    }
+  </style>
+</head>
+<body>
+  <h1>My Portfolio</h1>
+  <h2>About Me</h2>
+  <p>I am a web developer learning HTML and CSS.</p>
+  <a href="#">View my work</a>
+</body>
+</html>
