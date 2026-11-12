@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Layout</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      border-bottom: 3px double #1f2937;
+      padding-bottom: 1rem;
+    }
+
+    .newspaper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .article {
+      border-right: 1px solid #ccc;
+      padding-right: 1rem;
+    }
+
+    .article:last-child {
+      border-right: none;
+    }
+
+    .featured {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 800px) {
+      .newspaper {
+        grid-template-columns: 1fr;
+      }
+
+      .featured {
+        grid-column: span 1;
+      }
+
+      .article {
+        border-right: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>The Daily Times</h1>
+
+  <div class="newspaper">
+    <article class="article featured">
+      <h2>Main Story</h2>
+      <p>This is the biggest story of the day. It takes up two columns.</p>
+    </article>
+
+    <article class="article">
+      <h2>Weather</h2>
+      <p>Sunny with light winds all day.</p>
+    </article>
+
+    <article class="article">
+      <h2>Sports</h2>
+      <p>The local team won last night's match.</p>
+    </article>
+
+    <article class="article">
+      <h2>Business</h2>
+      <p>Markets closed higher this week.</p>
+    </article>
+
+    <article class="article">
+      <h2>Culture</h2>
+      <p>A new art exhibition opens downtown.</p>
+    </article>
+  </div>
+</body>
+</html>
